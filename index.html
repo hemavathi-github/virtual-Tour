@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Tour</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="virtual tour/Tour.js"></script>
+    </head>
+
+    <body>
+        <a-scene>
+            <a-sky
+            id="sky"
+            color="blue"
+            ></a-sky>
+            <a-camera id = "camera" wasd-controls-enabled="false">
+                
+            </a-camera>
+            <a-entity position="0.8 5 -5"text="color:black; value:Virtual tour;font:exo2bold; align:center; width:20"></a-entity>
+            <a-entity
+            position="0.8 4 -5" text="color:black;value:Explore the world; font:exo2bold; width:10; align:center;"
+            ></a-entity>
+            <a-entity Tour>
+            
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
