@@ -24,7 +24,7 @@ AFRAME.registerComponent('cursores', {
         var id = this.el.getAttribute("id")
         var placesId = ["budapest","taj_mahal","eiffel_tower","new_york_city"]
         if(placesId.includes(id)){
-            var place = document.querySelector("#placeContainer")
+            var place = document.querySelector("#placesContainer")
             place.setAttribute("cursores",{selectedId:id})
             place.setAttribute("geometry",{primitive:"ring",radiusInner:0.9,radiusOuter:2})
             place.setAttribute("material",{color:"white",opacity:1})
